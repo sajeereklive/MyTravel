@@ -1,0 +1,180 @@
+<?php
+error_reporting(0);
+$servername="localhost";
+  $username="root";
+  $password="";
+  $dbname="sajeer";
+mysql_connect($servername,$username,$password);
+mysql_select_db($dbname);
+?>
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//ENhttp://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>sajeer</title>
+<meta name="keywords" content="Red Blog Theme, Full Post, Free CSS Templates" />
+<meta name="description" content="Red Blog Theme (full post) - Free CSS Templates by templatemo.com" />
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+<h1>hayyyyyyyyyyyyyyyyyyyyy</h1>
+<div id="templatemo_top_wrapper">
+	<div id="templatemo_top">
+    
+        <div id="templatemo_menu">
+                    
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="portfolio.php">Portfolio</a></li>
+                <li><a href="services.php">Services</a></li>
+                <li><a href="contact.php">Contact Us</a></li>
+            </ul>    	
+        
+        </div> <!-- end of templatemo_menu -->
+        
+        <div id="twitter">
+        	<a href="www.twitter.com/sajeerek ">follow Me <br />
+        	on twitter</a>
+        </div>
+        
+  </div>
+</div>
+
+<div id="templatemo_header_wrapper">
+	<div id="templatemo_header">
+    
+    	<div id="site_title">
+            <h1><a href= target="_parent"><strong>SAJEER EK</strong><span>My Life Journey </span></a></h1>
+        </div>
+    
+    </div>
+</div>
+
+<div id="templatemo_main_wrapper">
+	<div id="templatemo_main">
+		<div id="templatemo_main_top">
+        
+        	<div id="templatemo_content">
+        
+    		<div class="post_section">
+            
+            	<div class="post_date">
+                	30<span>Nov</span>
+            	</div>
+                <div class="post_content">
+                
+                    <h2>Comments</h2>
+                    
+                	<strong>Author : </strong> Sajeer EK| <strong></strong> <a href="#"></a> <a href="#"></a>
+                    
+                    <a href="#"><img src="images/clt.jpg" alt="Templates" /></a>
+                
+       
+	<div class="comment_tab">
+                     
+                    </div>
+                    
+                    <div id="comment_section">
+                <ol class="comments first_level">
+                        
+                        <li>
+                            <div class="comment_box commentbox1">
+                                    
+                                <div class="gravatar">
+                                    <img src="images/avator.png" alt="author 6" />
+                                </div>
+                                
+                                <div class="comment_text">
+                                    <div class="comment_author"><?php echo $row[1];?><span class="date">
+           <?php
+		                           	
+			$sp= str_repeat('&nbsp;',80);
+										echo $sp;
+										?>
+
+            </span> <span class="time"><?php echo $row[4]; ?></span></div>
+            
+                                    <p><?php echo $row[3]; ?></p>
+                                  <div class="reply"></div>
+                                </div>
+                                <div class="cleaner"></div>
+                            </div>                        
+                            
+                        </li>
+                           
+                    </ol>
+                </div>
+                     <?php
+		}
+	}
+	else
+	{
+		?>
+             <?php
+	}
+	?>
+                	<div id="comment_form">
+                    <h3>Leave a comment</h3>
+                    
+                    <form action="commentdetails.php" method="post" name="comment">
+                        <div class="form_row">
+                            <label>Name ( Required )</label><br />
+                            <input type="hidden" name="date" />
+                            
+                            <input type="text" name="name"  required/>
+                        </div>
+                        <div class="form_row">
+                    
+                            <label>Email  (Required, will not be published)</label><br />
+                            <input type="email" id="email" name="email" class="validate-email required input_field" required />
+                        </div>
+                        <div class="form_row">
+                            <label>Your comment</label><br />
+                            <textarea  name="comment" rows= cols= required></textarea>
+                        </div>
+
+                        <input type="submit" name="Submit" value="Submit" class="submit_btn" />
+                    </form>
+                    
+                </div>
+                
+            	</div>
+
+                <div class="cleaner"></div>
+                
+            </div>
+            
+            
+       	 </div>
+            
+          
+        
+        	<div class="cleaner"></div>
+        </div>
+    </div><div id="templatemo_main_bottom"></div>
+</div>
+
+<div id="templatemo_footer">
+
+   Copyright © 2020 <a href="index.php">sajeereklive</a> | 
+    <a href="http://www.iwebsitetemplate.com" target="_parent"></a> by <a href="" target="_parent"></a>
+    
+</div>
+
+<div id="templatemo_footer">
+
+    Copyright © 2020 <a href="index.php">sajeereklive</a> | 
+    <a href= target="_parent"></a> by <a href="index.php" target="_parent">sajeer</a>
+   			 <?php
+			$today=date('d-m-y');
+			print "<p>Date : $today</p>";
+			?>
+    
+</div>
+
+<div align=center> <a href=''></a></div></body>
+</html>
